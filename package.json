@@ -2,9 +2,9 @@
     "name" : "Test",
     "description" : "test",
     "version" : "0.0.0",
-    "main" : "mwomon.js",
+    "main" : "newbot.js",
     "scripts": { 
-    "start": "node mwomon.js"
+    "start": "node newbot.js"
     },
     "dependencies": { 
      "discord.js": "11.3.2",
