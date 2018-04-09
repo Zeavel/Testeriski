@@ -83,4 +83,4 @@ client.on("guildMemberAdd", member =>
   member.addRole(foundRole.id)  } else {}
 })
 
-client.login('MzY0MzA5MTY1MDQ2MjM1MTM3.Da0SJw.VzC3qO70O_g4zxGQZvjQgokshqE');
+client.login(process.env.BOT_TOKEN);
