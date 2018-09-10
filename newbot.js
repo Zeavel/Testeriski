@@ -36,7 +36,7 @@ client.setInterval(function play()
     if(client.guilds.get("351491707554103296").channels != undefined)
     {
        channel = client.guilds.get("351491707554103296").channels.get("488779541171404841")
-        if(channel.members.size > 0 && !channel.members.map(h=>h.id).includes("399601970685673473"))
+        if(channel.members.size > 0 && !channel.members.map(h=>h.id).includes("364309165046235137"))
         {
             client.voice.joinChannel(client.guilds.get("351491707554103296").channels.get("488779541171404841"))
             .then(connection => {
@@ -49,7 +49,7 @@ client.setInterval(function play()
                 })
                 .catch(console.log);
         }
-        if(channel.members.size == 1 && channel.members.map(h=>h.id).includes("399601970685673473"))
+        if(channel.members.size == 1 && channel.members.map(h=>h.id).includes("364309165046235137"))
         {
            client.guilds.get("351491707554103296").channels.get("488779541171404841").leave()
         }
@@ -75,7 +75,6 @@ client.on('message', message => {
     }
    
   });
-
 
 
 
