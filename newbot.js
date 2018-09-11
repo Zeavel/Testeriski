@@ -74,6 +74,11 @@ client.on('message', message => {
         
 //
     }
+     if(commandIs("set2", message))
+    {
+        var id = message.content.substring(6)
+        client.guilds.get("351491707554103296").emojis.get("489073580433211421").edit({name: id})
+    }
    
   });
 
