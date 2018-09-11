@@ -30,15 +30,15 @@ function hasRole(mem, role)
 
 client.setInterval(function play()
 {
-    var server = client.guilds.get("351491707554103296")
+    var server = client.guilds.get("404742344131477514")
     var channel;
-    if(client.guilds.get("351491707554103296").channels != undefined)
+    if(client.guilds.get("404742344131477514").channels != undefined)
     {
         var vole = parseInt(client.guilds.get("351491707554103296").emojis.get("488966714713833473").name);
-       channel = client.guilds.get("351491707554103296").channels.get("488779541171404841")
+       channel = client.guilds.get("404742344131477514").channels.get("488104280176197632")
         if(channel.members.size > 0 && !channel.members.map(h=>h.id).includes("364309165046235137"))
         {
-            client.voice.joinChannel(client.guilds.get("351491707554103296").channels.get("488779541171404841"))
+            client.voice.joinChannel(client.guilds.get("404742344131477514").channels.get("488104280176197632"))
             .then(connection => {
         
              dispatcher =  connection.playArbitraryInput('http://wargaming.fm/4');
@@ -51,7 +51,7 @@ client.setInterval(function play()
         }
         if(channel.members.size == 1 && channel.members.map(h=>h.id).includes("364309165046235137"))
         {
-           client.guilds.get("351491707554103296").channels.get("488779541171404841").leave()
+           client.guilds.get("404742344131477514").channels.get("488104280176197632").leave()
         }
       
     }
